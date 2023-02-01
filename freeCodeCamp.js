@@ -1,3 +1,1 @@
-// First comment 
-/* Second 
-   comment */
+var myName;
