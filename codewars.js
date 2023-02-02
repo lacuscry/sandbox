@@ -1,7 +1,1 @@
-function number(busStops) {
-  let passed = [];
-  
-  busStops.forEach(stop => passed.push(stop.reduce((a, b) => a - b)));
-  
-  return passed.reduce((a, b) => a + b);
-}
+const getMiddle = word => word.length % 2 ? word[Math.floor(word.length / 2)] : word[word.length / 2 - 1] + word[word.length / 2];
