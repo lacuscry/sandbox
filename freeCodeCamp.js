@@ -1,3 +1,4 @@
-// Only change code below this line
-const myName = "JavaScript";
-const myStr = "My names is " + myName + ".";
+// Change code below this line
+const someAdjective = "easy";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
