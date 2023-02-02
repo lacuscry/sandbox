@@ -1,7 +1,1 @@
-function areYouPlayingBanjo(name) {
-  if (name.toLowerCase()[0] === 'r') {
-    return name + " plays banjo";
-  } else {
-    return name + " does not play banjo";
-  }
-}
+const evenOrOdd = number => number % 2 === 0 ? 'Even' : 'Odd';
