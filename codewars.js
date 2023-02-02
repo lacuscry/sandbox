@@ -1,1 +1,1 @@
-const lovefunc = (flower1, flower2) => Boolean((flower1 + flower2) % 2); 
+const findNeedle = haystack => `found the needle at position ${haystack.indexOf('needle')}`;
