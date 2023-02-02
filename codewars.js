@@ -1,9 +1,7 @@
-function openOrSenior(data) {
-  const newData = [];
+function number(busStops) {
+  let passed = [];
   
-  for (let member of data) {
-    member[0] >= 55 && member[1] > 7 ? newData.push('Senior') : newData.push('Open');
-  }
+  busStops.forEach(stop => passed.push(stop.reduce((a, b) => a - b)));
   
-  return newData;
+  return passed.reduce((a, b) => a + b);
 }
