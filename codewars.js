@@ -1,1 +1,1 @@
-const stringToNumber = str => +str;
+const lovefunc = (flower1, flower2) => Boolean((flower1 + flower2) % 2); 
