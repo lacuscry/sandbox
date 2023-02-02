@@ -1,1 +1,1 @@
-const findNeedle = haystack => `found the needle at position ${haystack.indexOf('needle')}`;
+const basicOp = (operator, value1, value2) => eval(value1 + operator + value2);
