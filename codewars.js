@@ -1,1 +1,1 @@
-const basicOp = (operator, value1, value2) => eval(value1 + operator + value2);
+const firstNonConsecutive = arr => arr.find((cur, prev) => cur - prev === 2) || null;
