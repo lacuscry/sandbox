@@ -1,1 +1,1 @@
-const isIsogram = str => ![...str.toLowerCase()].filter((l, i, a) => i !== a.indexOf(l)).length;
+const number = array => array.map((s, i) => `${i + 1}: ${s}`) || [];
