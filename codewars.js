@@ -1,7 +1,1 @@
-function longest(s1, s2) {
-  let array = new Set();
-  
-  [...s1, ...s2].forEach(l => array.add(l));
-  
-  return [...array].sort().join('');
-}
+const sumArray = arr => arr?.length > 2 ? arr.reduce((a, b) => a + b) - (Math.min(...arr) + Math.max(...arr)) : 0;
