@@ -1,1 +1,1 @@
-const removeEveryOther = arr => arr.filter((el, i) => !(i % 2) && el);
+const stray = nums => +nums.filter((n, i, a) => a.indexOf(n) === a.lastIndexOf(n));
