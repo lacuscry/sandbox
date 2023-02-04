@@ -1,1 +1,1 @@
-const reverseWords = str => str.split(' ').map(el => [...el].reverse().join('')).join(' ');
+const smash = words => words.join(' ');
