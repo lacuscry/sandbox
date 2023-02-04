@@ -1,1 +1,1 @@
-const number = array => array.map((s, i) => `${i + 1}: ${s}`) || [];
+const getAge = age => parseInt(age);
