@@ -1,6 +1,5 @@
-function functionWithArgs(a, b) {
-    console.log(a + b)
-}
-  
-functionWithArgs(1, 2);
-functionWithArgs(7, 9);
+const timesFive = num => num * 5;
+
+timesFive(5);
+timesFive(2);
+timesFive(0);
