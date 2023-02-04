@@ -1,5 +1,20 @@
-const timesFive = num => num * 5;
+// Declare the myGlobal variable below this line
+const oopsGlobal = 5;
+let myGlobal;
+function fun1() {
+  // Assign 5 to oopsGlobal here
+  myGlobal = 10;
+}
+fun1();
+// Only change code above this line
 
-timesFive(5);
-timesFive(2);
-timesFive(0);
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
