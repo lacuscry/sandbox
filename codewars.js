@@ -1,9 +1,1 @@
-function countBy(x, n) {
-  let z = [];
-
-  for (let i = 1; i <= n; i++) {
-    z.push(i * x);
-  }
-  
-  return z;
-}
+const minMax = arr => [Math.min(...arr), Math.max(...arr)];
