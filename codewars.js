@@ -1,1 +1,1 @@
-const isTriangle = (a, b, c) => a + b > c && b + c > a && c + a > b;
+const areaOrPerimeter = (l, w) => l === w ? l * w : (l + w) * 2;
