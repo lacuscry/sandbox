@@ -1,1 +1,1 @@
-const hoopCount = n => n >= 10 ? 'Great, now move on to tricks' : 'Keep at it until you get it';
+const removeEveryOther = arr => arr.filter((el, i) => !(i % 2) && el);
