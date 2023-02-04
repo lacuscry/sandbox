@@ -1,15 +1,9 @@
-function firstNonConsecutive (arr) {
-  let result;
-  
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i + 1] - arr[i] > 1) {
-      result = arr[i + 1];
+function countBy(x, n) {
+  let z = [];
 
-      break;
-    }
-
-    result = null;
+  for (let i = 1; i <= n; i++) {
+    z.push(i * x);
   }
-
-  return result;
+  
+  return z;
 }
