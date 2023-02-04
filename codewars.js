@@ -1,29 +1,22 @@
-function humanYearsCatYearsDogYears(years) {
-  const result = [0, 0, 0];
+function likes(names) {
+  let message;
   
-  const yearsInfo = [
-    {
-      1: 1,
-      2: 1,
-      3: 1
-    },
-    {
-      1: 15,
-      2: 9,
-      3: 4
-    },
-    {
-      1: 15,
-      2: 9,
-      3: 5
-    }
-  ]
+  switch (names.length) {
+      case 0:
+          return message = 'no one likes this';
+      
+      case 1:
+          return message = `${names[0]} likes this`;
+      
+      case 2:
+          return message = `${names[0]} and ${names[1]} like this`;
+      
+      case 3:
+          return message = `${names[0]}, ${names[1]} and ${names[2]} like this`;
+      
+      default:
+          return message = `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+  }
   
-  yearsInfo.forEach((el, i) => {
-    for (let y = 1; y <= years; y++) {
-         result[i] += y < 4 ? el[y] : el[3];
-    }
-  }); 
-
-  return result;
-};
+  return message;
+}
