@@ -1,9 +1,9 @@
-function rangeOfNumbers(startNum, endNum) {
-    if (endNum < startNum) {
-      return [];
-    } else {
-      const arr = rangeOfNumbers(startNum, endNum - 1);
-      arr.push(endNum);
-      return arr;
-    }
-  };
+function checkScope() {
+  let i = 'function scope';
+  if (true) {
+    let i = 'block scope';
+    console.log('Block scope i is: ', i);
+  }
+  console.log('Function scope i is: ', i);
+  return i;
+}
