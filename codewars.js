@@ -1,1 +1,1 @@
-const numberToString = String;
+const filter_list = a => a.filter(n => Number.isInteger(n) && n.toString);
