@@ -1,1 +1,1 @@
-const sumArray = arr => arr?.length > 2 ? arr.reduce((a, b) => a + b) - (Math.min(...arr) + Math.max(...arr)) : 0;
+const numberToString = String;
