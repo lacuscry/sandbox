@@ -1,6 +1,11 @@
-function highAndLow(nums) {
-  const maxNum = nums.split(' ').map(n => +n).reduce((a, b) => Math.max(a, b));
-  const minNum = nums.split(' ').map(n => +n).reduce((a, b) => Math.min(a, b));
+function SeriesSum(n){
+    let result = n ? 1 : 0;
+    let count = 1;
   
-  return`${maxNum} ${minNum}`;
+    for (let i = 1; count < n; count++) {
+      i += 3;
+      result += 1 / i;
+    }
+  
+    return result % 1 == 0 ? `${result}.00` : `${result.toFixed(2)}`;
 }
