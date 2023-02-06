@@ -1,10 +1,9 @@
-function sortArray(array) {
-    const odd = [];
-    const even = [];
+const reverseSeq = n => {
+    const arr = [];
     
-    const arr = array.map((a, i) => a % 2 === 0 ? a : odd.push(a) && even.push(i) && 0);
-    
-    even.forEach((a, i) => arr[even[i]] ? 0 : arr[even[i]] = odd.sort((a, b) => a - b)[i]);
+    for (let i = n; i > 0; i--) {
+      arr.push(i);
+    }
     
     return arr;
-  }
+  };
