@@ -1,1 +1,1 @@
-const findAverage = array => array.length ? array.reduce((a, b) => a + b) / array.length : 0;
+const findShort = s => s.split(' ').map(w => w.length).sort((a, b) => a - b)[0];
