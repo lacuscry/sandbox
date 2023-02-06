@@ -1,1 +1,1 @@
-const cockroachSpeed = s => Math.floor(s * 10000 / 360);
+const findAverage = array => array.length ? array.reduce((a, b) => a + b) / array.length : 0;
