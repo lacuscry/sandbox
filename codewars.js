@@ -1,1 +1,1 @@
-const arrayDiff = (a, b) => a.filter(n => !b.includes(n));
+const cockroachSpeed = s => Math.floor(s * 10000 / 360);
