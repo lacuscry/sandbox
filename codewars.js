@@ -1,1 +1,1 @@
-const enough = (cap, on, wait) => cap - on - wait < 0 ? Math.abs(cap - on - wait) : 0;
+const solution = string => string.split('').map(l => l == l.toLowerCase() ? l : ` ${l}`).join('');
