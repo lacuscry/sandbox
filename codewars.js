@@ -1,1 +1,1 @@
-const doubleChar = str => str.replace(/./g,'$&$&');
+const greet = (name, owner) => name === owner ? 'Hello boss' : 'Hello guest';
