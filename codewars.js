@@ -1,1 +1,1 @@
-const maps = x => x.map(a => a * 2);
+const booleanToString = String;
