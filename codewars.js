@@ -1,1 +1,1 @@
-const addBinary = (a, b) => (a + b).toString(2);
+const makeUpperCase = str => str.toUpperCase();
