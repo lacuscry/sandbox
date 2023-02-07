@@ -1,1 +1,1 @@
-const greet = (name, owner) => name === owner ? 'Hello boss' : 'Hello guest';
+const fakeBin = x => [...x].map(x => x < 5 ? 0 : 1).join('');
