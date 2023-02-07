@@ -1,1 +1,1 @@
-const makeUpperCase = str => str.toUpperCase();
+const maps = x => x.map(a => a * 2);
