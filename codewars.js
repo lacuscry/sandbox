@@ -1,1 +1,1 @@
-const doubleInteger = n => n * 2;
+const sum = nums => nums.reduce((a, b) => a + b, 0);
