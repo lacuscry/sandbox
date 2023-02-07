@@ -1,1 +1,1 @@
-const sum = nums => nums.reduce((a, b) => a + b, 0);
+const addBinary = (a, b) => (a + b).toString(2);
