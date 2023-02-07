@@ -1,1 +1,1 @@
-const booleanToString = String;
+const friend = list => list.filter(a => a.length === 4);
