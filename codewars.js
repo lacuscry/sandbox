@@ -1,1 +1,1 @@
-const friend = list => list.filter(a => a.length === 4);
+const doubleChar = str => str.replace(/./g,'$&$&');
