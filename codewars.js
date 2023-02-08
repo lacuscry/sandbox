@@ -1,1 +1,1 @@
-const accum = s => s.split('').map((a, i) => a.repeat(i + 1).toLowerCase()).map(b => b.replace(b[0], b[0].toUpperCase())).join('-');
+const grow = x => x.reduce((a, b) => a * b);
