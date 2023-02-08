@@ -1,10 +1,1 @@
-function persistence(num) {
-    let count,
-        total = num;
-    
-    for (count = 0; `${total}`.length > 1; count++) {
-        total = `${total}`.split('').reduce((a, b) => a * b);
-    }
-    
-    return count;
-  }
+const accum = s => s.split('').map((a, i) => a.repeat(i + 1).toLowerCase()).map(b => b.replace(b[0], b[0].toUpperCase())).join('-');
