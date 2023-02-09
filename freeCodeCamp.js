@@ -1,3 +1,3 @@
-const convertCtoF = celsius => celsius * 9 / 5 + 32;
+const reverseString = str => str.split('').reverse().join('');
 
-convertCtoF(30);
+reverseString("hello");
