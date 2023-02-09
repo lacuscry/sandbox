@@ -1,7 +1,9 @@
-function quickCheck(arr, elem) {
+function filteredArray(arr, elem) {
+    let newArr = [];
     // Only change code below this line
-    return arr.indexOf(elem) > -1;
+    arr.forEach(a => a.indexOf(elem) === -1 && newArr.push(a));
     // Only change code above this line
+    return newArr;
   }
   
-  console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+  console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
