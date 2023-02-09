@@ -1,3 +1,3 @@
-const repeatStringNumTimes = (str, num) => num > 0 ? Array(num).fill(str).join('') : "";
+const truncateString = (str, num) => str.slice(0, num) + `${str.length > num ? "..." : ""}`;
 
-repeatStringNumTimes("abc", 3);
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
