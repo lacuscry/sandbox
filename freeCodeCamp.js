@@ -1,3 +1,4 @@
-let sampleWord = "astronaut";
-let pwRegex = /(?=\w{0,5})(?=\D{2,5}\d{2,5})/; // Change this line
-let result = pwRegex.test(sampleWord);
+let myString = "Eleanor Roosevelt";
+let myRegex = /(?=nor\sRoosevelt)|(?=lin\sD.\sRoosevelt)/g; // Change this line
+let result = myRegex.test(myString); // Change this line
+// After passing the challenge experiment with myString and see how the grouping works
