@@ -1,1 +1,3 @@
-const grow = x => x.reduce((a, b) => a * b);
+class SmallestIntegerFinder {
+    findSmallestInt = args => args.sort((a, b) => a - b)[0];
+  }
