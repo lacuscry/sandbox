@@ -1,27 +1,25 @@
-let users = {
+const users = {
     Alan: {
-      age: 27,
-      online: true
+      online: false
     },
     Jeff: {
-      age: 32,
       online: true
     },
     Sarah: {
-      age: 48,
-      online: true
-    },
-    Ryan: {
-      age: 19,
-      online: true
+      online: false
     }
-  };
+  }
   
-  function isEveryoneHere(userObj) {
+  function countOnline(usersObj) {
     // Only change code below this line
-    const arr = ['Alan', 'Jeff', 'Sarah', 'Ryan'];
-    return arr.every(user => user in userObj);
+    let countOnline = 0
+  
+    for (let user in usersObj) {
+        countOnline += +usersObj[user].online;
+    }
+  
+    return countOnline;
     // Only change code above this line
   }
   
-  console.log(isEveryoneHere(users));
+  console.log(countOnline(users));
