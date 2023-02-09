@@ -1,5 +1,1 @@
-function myFunc() {
-    for (let i = 1; i <= 4; i += 2) {
-      console.log("Still going!");
-    }
-  }
+const yourArray = [true, 0, 'false', false, 1];
