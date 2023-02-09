@@ -1,3 +1,3 @@
-const booWho = bool => bool === true || bool === false;
+const titleCase = str => str.toLowerCase().replace(/(\s\w)|(^.)/g, x => x.toUpperCase());
 
-booWho(null);
+titleCase("I'm a little tea pot");
