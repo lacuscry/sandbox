@@ -1,3 +1,3 @@
-const reverseString = str => str.split('').reverse().join('');
+const factorialize = num => Array.from({length: num}, (a, i) => ++i).reduce((a, b) => a * b, 1);
 
-reverseString("hello");
+factorialize(5);
