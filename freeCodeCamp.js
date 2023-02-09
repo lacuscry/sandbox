@@ -1,3 +1,3 @@
-const findLongestWordLength = str => Math.max(...str.split(' ').map(a => a.length));
+const largestOfFour = arr => arr.map(a => Math.max(...a));
 
-findLongestWordLength("The quick brown fox jumped over the lazy dog");
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
