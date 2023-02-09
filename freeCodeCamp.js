@@ -1,3 +1,3 @@
-const truncateString = (str, num) => str.slice(0, num) + `${str.length > num ? "..." : ""}`;
+const findElement = (arr, func) => arr.filter(a => func(a))[0];
 
-truncateString("A-tisket a-tasket A green and yellow basket", 8);
+findElement([1, 2, 3, 4], num => num % 2 === 0);
