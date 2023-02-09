@@ -1,3 +1,3 @@
-const factorialize = num => Array.from({length: num}, (a, i) => ++i).reduce((a, b) => a * b, 1);
+const findLongestWordLength = str => Math.max(...str.split(' ').map(a => a.length));
 
-factorialize(5);
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
