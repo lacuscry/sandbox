@@ -1,1 +1,5 @@
-const yourArray = [true, 0, 'false', false, 1];
+let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1] = 'x';
+// Only change code above this line
+console.log(myArray);
