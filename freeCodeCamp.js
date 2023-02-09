@@ -1,3 +1,3 @@
-const largestOfFour = arr => arr.map(a => Math.max(...a));
+const confirmEnding = (str, target) => str.slice(str.length - target.length) === target;
 
-largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+confirmEnding("Bastian", "n");
