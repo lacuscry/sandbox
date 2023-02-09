@@ -1,3 +1,3 @@
-const findElement = (arr, func) => arr.filter(a => func(a))[0];
+const booWho = bool => bool === true || bool === false;
 
-findElement([1, 2, 3, 4], num => num % 2 === 0);
+booWho(null);
