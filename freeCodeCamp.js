@@ -1,3 +1,3 @@
-const confirmEnding = (str, target) => str.slice(str.length - target.length) === target;
+const repeatStringNumTimes = (str, num) => num > 0 ? Array(num).fill(str).join('') : "";
 
-confirmEnding("Bastian", "n");
+repeatStringNumTimes("abc", 3);
