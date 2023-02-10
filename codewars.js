@@ -1,1 +1,3 @@
-const descendingOrder = n => n > 1 ? +n.toString().split('').sort((a, b) => a - b).reverse().join('') : n;
+String.prototype.toJadenCase = function () {
+  return this.replace(/(^.?)|(\s.)/g, (x) => x.toUpperCase());
+};
