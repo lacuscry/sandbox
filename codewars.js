@@ -1,3 +1,1 @@
-String.prototype.isUpperCase = function () {
-  return this.split('').every(a => a === a.toUpperCase());
-}
+const descendingOrder = n => n > 1 ? +n.toString().split('').sort((a, b) => a - b).reverse().join('') : n;
