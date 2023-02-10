@@ -1,1 +1,1 @@
-const solution = str => str ? str.replace(/(.{2})/g, '$1 ').split(' ').map(a => a.length === 2 ? a : a && a + '_').filter(a => a) : [];
+const toCamelCase = str => str.replace(/[-_]./g, x => x.toUpperCase()).replace(/[-_]/g, '');
