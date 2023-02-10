@@ -1,10 +1,9 @@
-function findNextSquare(sq) {
-  let nextSquare = sq;
+function countSheep(num) {
+  let str = "";
   
-  do {
-      nextSquare += 1;
-  } while (Math.sqrt(nextSquare) % 1 !== 0)
+  for (let i = 1; i <= num; i++) {
+    str += `${i} sheep...`;
+  }
   
-
-  return Math.sqrt(sq) % 1 === 0 ? nextSquare : -1;
+  return str;
 }
