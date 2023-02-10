@@ -1,9 +1,3 @@
-function countSheep(num) {
-  let str = "";
-  
-  for (let i = 1; i <= num; i++) {
-    str += `${i} sheep...`;
-  }
-  
-  return str;
+String.prototype.isUpperCase = function () {
+  return this.split('').every(a => a === a.toUpperCase());
 }
