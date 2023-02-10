@@ -1,7 +1,1 @@
-function duplicateEncode(word){
-  const repeated = {};
-        
-  word.toLowerCase().split('').forEach((a, i, arr) => i === arr.indexOf(a) ? repeated[a] = '(' : repeated[a] = ')');
-  
-  return word.toLowerCase().replace(/./g, x => repeated[x]);
-}
+const solution = str => str ? str.replace(/(.{2})/g, '$1 ').split(' ').map(a => a.length === 2 ? a : a && a + '_').filter(a => a) : [];
