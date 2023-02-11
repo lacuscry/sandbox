@@ -1,13 +1,24 @@
-function spinalCase(str) {
-    return str.replace(/[_]/g, '')
-                  .replace(/[=A-Z]|\s./g, x => str.indexOf(x) ? '-' + x : x)
-                  .split(' ')
-                  .join('')
-                  .toLowerCase();
+function translatePigLatin(str) {
+    let result = str;
+  
+    for (let i = 0; ;i++) {
+      if (/[aeiou]/.test(str[i])) {
+        break;
+      } else {
+        result = result.slice(1, str.length) + str[i];
+      }
+    }
+    
+    if (result !== str || !/[aeiou]/g.test(result)) {
+        result += 'ay';
+    } else {
+        result += 'way';
+    }
+  
+    return result;
   }
   
-  spinalCase("Teletubbies say Eh-oh");
-  spinalCase("thisIsSpinalTap")
-  spinalCase("AllThe-small Things")
-  spinalCase('This Is Spinal Tap');
-  spinalCase("The_Andy_Griffith_Show")
+  translatePigLatin("rhythm")
+  translatePigLatin("algorithm")
+  translatePigLatin("glove")
+  translatePigLatin("consonant");
