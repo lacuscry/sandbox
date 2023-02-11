@@ -1,7 +1,7 @@
-function splitify(str) {
+function sentensify(str) {
     // Only change code below this line
-    return str.split(/[\s,-.]/g);
+    return str.split(/[-.,]/g).join(' ');
     // Only change code above this line
   }
   
-  splitify("Hello World,I-am code");
+  sentensify("May-the-force-be-with-you");
