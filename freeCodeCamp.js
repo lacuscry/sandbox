@@ -1,7 +1,3 @@
-function getIndexToIns(arr, num) {
-    arr.push(num);
-  
-    return arr.sort((a, b) => a - b).indexOf(num);
-  }
-  
-  getIndexToIns([40, 60], 50);
+const mutation = arr => arr[1].toLowerCase().split('').every(a => arr[0].toLowerCase().indexOf(a) >= 0);
+
+mutation(["hello", "hey"]);
