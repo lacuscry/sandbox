@@ -1,7 +1,7 @@
-function Dog(name, color) {
-    this.name = name;
-    this.color = color;
-    this.numLegs = 4;
-}
-
-const terrier = new Dog('Dog', 'black');
+function House(numBedrooms) {
+    this.numBedrooms = numBedrooms;
+  }
+  
+  // Only change code below this line
+  const myHouse = new House(4);
+  myHouse instanceof House;
