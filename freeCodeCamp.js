@@ -1,7 +1,11 @@
-function House(numBedrooms) {
-    this.numBedrooms = numBedrooms;
+function Bird(name) {
+    this.name = name;
+    this.numLegs = 2;
   }
   
+  let canary = new Bird("Tweety");
+  let ownProps = [];
   // Only change code below this line
-  const myHouse = new House(4);
-  myHouse instanceof House;
+  for (let property in canary) {
+      ownProps.push(property);
+  }
