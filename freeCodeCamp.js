@@ -1,7 +1,11 @@
-function add(x) {
-    // Only change code below this line
-    return y => z => x + y + z;
-    // Only change code above this line
+function sumAll(arr) {
+    let sum = 0;
+  
+    for (let i = Math.min(...arr); i <= Math.max(...arr); i++) {
+        sum += i;
+    }
+  
+    return sum;
   }
   
-  add(10)(20)(30);
+  sumAll([1, 4]);
