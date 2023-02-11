@@ -1,6 +1,13 @@
-function whatIsInAName(collection, source) {
-    return collection.filter(a => Object.keys(source).every(b => source[b] === a[b]));
+function spinalCase(str) {
+    return str.replace(/[_]/g, '')
+                  .replace(/[=A-Z]|\s./g, x => str.indexOf(x) ? '-' + x : x)
+                  .split(' ')
+                  .join('')
+                  .toLowerCase();
   }
   
-  whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet", });
-  whatIsInAName([{ "apple": 1, "bat": 2 }, { "apple": 3, "bat": 1 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 })
+  spinalCase("Teletubbies say Eh-oh");
+  spinalCase("thisIsSpinalTap")
+  spinalCase("AllThe-small Things")
+  spinalCase('This Is Spinal Tap');
+  spinalCase("The_Andy_Griffith_Show")
