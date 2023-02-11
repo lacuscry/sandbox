@@ -1,8 +1,9 @@
-function sliceArray(anim, beginSlice, endSlice) {
+function nonMutatingSplice(cities) {
     // Only change code below this line
-      return anim.slice(beginSlice, endSlice);
+    const newArr = cities.slice(0, 3);
+    return newArr;
     // Only change code above this line
   }
   
-  const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
-  sliceArray(inputAnim, 1, 3);
+  const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+  nonMutatingSplice(inputCities);
