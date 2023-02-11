@@ -1,6 +1,14 @@
-function uniteUnique(...arrays) {
-    return [...new Set(arrays.flat())];
+function convertHTML(str) {
+    const specialChars = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&apos;',
+      '<>': '&lt;'
+    } 
+  
+    return str.replace(/./g, a => specialChars.hasOwnProperty(a) ? specialChars[a] : a);
   }
   
-  uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]);
-  uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+  convertHTML("Dolce & Gabbana");
