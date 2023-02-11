@@ -1,9 +1,9 @@
-function nonMutatingSplice(cities) {
+function nonMutatingConcat(original, attach) {
     // Only change code below this line
-    const newArr = cities.slice(0, 3);
-    return newArr;
+    return (original).concat(attach);
     // Only change code above this line
   }
   
-  const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
-  nonMutatingSplice(inputCities);
+  const first = [1, 2, 3];
+  const second = [4, 5];
+  nonMutatingConcat(first, second);
