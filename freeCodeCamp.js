@@ -1,5 +1,4 @@
-function Animal() {
-}
+function Animal() { }
 
 Animal.prototype = {
   constructor: Animal,
@@ -8,7 +7,9 @@ Animal.prototype = {
   }
 };
 
-// Only change code below this line
+function Dog() { }
 
-let duck = Object.create(Animal.prototype); // Change this line
-let beagle = Object.create(Animal.prototype); // Change this line
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+
+let beagle = new Dog();
