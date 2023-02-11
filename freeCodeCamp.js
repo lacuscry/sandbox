@@ -1,6 +1,6 @@
 function checkPositive(arr) {
     // Only change code below this line
-    return arr.every(a => a > 0);
+    return arr.some(a => a > 0);
     // Only change code above this line
   }
   
