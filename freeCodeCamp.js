@@ -1,7 +1,8 @@
-class Dog {
-    constructor(name, color, numLegs) {
-      this.name = 'Dog';
-      this.color = 'black';
-      this.numLegs = 4;
-    }
-}
+function Dog() {
+    this.name = "Rupert";
+    this.color = "brown";
+    this.numLegs = 4;
+  }
+  
+  // Only change code below this line
+  const hound = new Dog();
