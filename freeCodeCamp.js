@@ -1,6 +1,10 @@
-function myReplace(str, before, after) {
-    return str.replace(before, a => after.replace(/./, b => a[0] === a[0].toUpperCase() ? b.toUpperCase() : b.toLowerCase()));
+function pairElement(str) {
+    return str.split('').map(a => ({
+      A: ['A', 'T'],
+      T: ['T', 'A'],
+      C: ['C', 'G'],
+      G: ['G', 'C']
+    })[a]);
   }
   
-  myReplace("He is Sleeping on the couch", "Sleeping", "sitting")
-  myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+  pairElement("GCG");
