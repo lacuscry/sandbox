@@ -1,7 +1,8 @@
-Array.prototype.myFilter = function(callback) {
-    const newArray = [];
+function sliceArray(anim, beginSlice, endSlice) {
     // Only change code below this line
-    this.forEach((a, i, arr) => callback(a, i, arr) && newArray.push(a));
+      return anim.slice(beginSlice, endSlice);
     // Only change code above this line
-    return newArray;
-  };
+  }
+  
+  const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+  sliceArray(inputAnim, 1, 3);
