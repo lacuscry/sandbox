@@ -1,9 +1,7 @@
-const globalArray = [5, 6, 3, 2, 9];
-
-function nonMutatingSort(arr) {
-  // Only change code below this line
-  return [...arr].sort((a, b) => a - b);
-  // Only change code above this line
-}
-
-nonMutatingSort(globalArray);
+function splitify(str) {
+    // Only change code below this line
+    return str.split(/[\s,-.]/g);
+    // Only change code above this line
+  }
+  
+  splitify("Hello World,I-am code");
