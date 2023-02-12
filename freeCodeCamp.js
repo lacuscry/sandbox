@@ -1,25 +1,8 @@
-function sumFibs(num) {
-  const arr = [1];
-  let sum = 0;
+function sumPrimes(num) {
+  let arr = Array.from({length: num}, (a, b) => ++b);
 
-  for (let i = 1; i < num; i++) {
-    if (arr.length > 3) {
-      arr.push(arr.slice(-2).reduce((a, b) => a + b));
-    } else {
-      arr.push(i);
-    }
-  }
-
-  arr.reverse().forEach(a => {
-    if (a % 2 && a <= num) {
-      sum += a;
-    }
-  })
-
-  return sum;
+  return arr.reduce((a, b) => a + b) - arr.filter(a => arr.filter(b => !((a / b) % 1)).length > 2).reduce((a, b) => a + b) - 1;
 }
 
-sumFibs(3); //2
-sumFibs(4); //5
-sumFibs(1000); //1785
-sumFibs(75025); //135721
+sumPrimes(10);
+sumPrimes(977);
