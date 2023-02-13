@@ -1,8 +1,16 @@
-function sumPrimes(num) {
-  let arr = Array.from({length: num}, (a, b) => ++b);
+function smallestCommons(arr) {
+  const array = [];
+  let isEvery;
 
-  return arr.reduce((a, b) => a + b) - arr.filter(a => arr.filter(b => !((a / b) % 1)).length > 2).reduce((a, b) => a + b) - 1;
+  for (let i = Math.min(...arr); i <= Math.max(...arr); i++) {
+      array.push(i);
+  }
+
+  for (let i = array[0]; !isEvery; i++) {
+      isEvery = array.every(a => !(i / a % 1));
+     
+      if (isEvery) {
+        return i;
+       }
+  }
 }
-
-sumPrimes(10);
-sumPrimes(977);
