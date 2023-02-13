@@ -1,19 +1,28 @@
-function addTogether(...props) {
-  const isNumber = props.every(a => typeof a == 'number');
+const Person = function(firstAndLast) {
+  // Only change code below this line
+  // Complete the method below and implement the others similarly
+  let changedFullName;
 
-  if (isNumber) {
-    if (props.length < 2) {
-      return function(...props2) {
-        return typeof props2[0] == 'number' ? props[0] + props2[0] : undefined;
-      }
-    } else {
-      return props[0] + props[1];
-    }
-  } else {
-    return undefined;
-  }
-}
+  
+  this.getFullName = () => changedFullName || firstAndLast;
+  this.getFirstName = () => changedFullName?.split(' ')[0] || firstAndLast?.split(' ')[0];
+  this.getLastName = () => changedFullName?.split(' ')[1] || firstAndLast?.split(' ')[1];
 
-addTogether("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-addTogether(2,3);
-addTogether(5)(7);
+
+  this.setFullName = newFullName => {
+    changedFullName = newFullName;
+  };
+
+  this.setFirstName = newFirstName => {
+    this.setFullName(`${newFirstName} ${this.getLastName()}`);
+  };
+
+  this.setLastName = newLastName => {
+    this.setFullName(`${this.getFirstName()} ${newLastName}`);
+  };
+
+
+  return firstAndLast;
+};
+
+const bob = new Person('Bob Ross');
