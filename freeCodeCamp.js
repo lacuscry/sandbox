@@ -1,5 +1,19 @@
-function truthCheck(collection, pre) {
-  return collection.every(a => a[pre]);
+function addTogether(...props) {
+  const isNumber = props.every(a => typeof a == 'number');
+
+  if (isNumber) {
+    if (props.length < 2) {
+      return function(...props2) {
+        return typeof props2[0] == 'number' ? props[0] + props2[0] : undefined;
+      }
+    } else {
+      return props[0] + props[1];
+    }
+  } else {
+    return undefined;
+  }
 }
 
-truthCheck([{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}], "isBot");
+addTogether("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+addTogether(2,3);
+addTogether(5)(7);
