@@ -1,16 +1,17 @@
-function smallestCommons(arr) {
-  const array = [];
-  let isEvery;
+function dropElements(arr, func) {
+  const array = [...arr];
+  
+  for (let i = 0; i < arr.length; i++) {
+    if (func(arr[i])) {
+      return array
+    }
 
-  for (let i = Math.min(...arr); i <= Math.max(...arr); i++) {
-      array.push(i);
+    array.shift();
   }
 
-  for (let i = array[0]; !isEvery; i++) {
-      isEvery = array.every(a => !(i / a % 1));
-     
-      if (isEvery) {
-        return i;
-       }
-  }
+  return array
 }
+
+dropElements([1, 2, 3, 4], function(n) {return n >= 3;})
+dropElements([0, 1, 0, 1], function(n) {return n === 1;})
+dropElements([1, 2, 3], function(n) {return n > 0;})
