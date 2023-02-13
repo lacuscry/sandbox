@@ -1,1 +1,1 @@
-const toCamelCase = str => str.replace(/[-_]./g, x => x.toUpperCase()).replace(/[-_]/g, '');
+const wave = str => Array(str.length).fill(str).map((w, i) => w.replace(/[a-z]/gi, (l, j) => i === j ? l.toUpperCase() : l)).filter(a => /[A-Z]/g.test(a));
