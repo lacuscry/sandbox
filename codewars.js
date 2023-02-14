@@ -1,1 +1,1 @@
-const createPhoneNumber = numbers => numbers.join('').replace(/^.{3}/g, a => `(${a}) `).replace(/ .{3}/g, a => `${a}-`);
+const countBits = n => n.toString(2).split('').reduce((a, b) => +a + +b, 0);
