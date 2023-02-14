@@ -1,1 +1,1 @@
-const DNAStrand = dna => dna.replace(/./g, a => ({A: 'T', T: 'A', G: 'C', C: 'G'})[a]);
+const maskify = cc => Array(...cc).fill('#', 0, -4).join('');
