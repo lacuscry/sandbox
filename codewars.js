@@ -1,9 +1,1 @@
-function digitalRoot(n) {
-    let sumString = n.toString();
-    
-    do {
-      sumString = sumString.match(/./g).reduce((a, b) => +a + +b).toString();
-    } while (sumString.length > 1)
-    
-    return +sumString;
-  }
+const createPhoneNumber = numbers => numbers.join('').replace(/^.{3}/g, a => `(${a}) `).replace(/ .{3}/g, a => `${a}-`);
