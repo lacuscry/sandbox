@@ -1,1 +1,1 @@
-const summation = num => Array.from({length: num}, (a, b) => ++b).reduce((a, b) => a + b);
+const noSpace = x => x.replace(/ /g, '');
