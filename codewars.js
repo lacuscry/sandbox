@@ -1,1 +1,1 @@
-const maskify = cc => Array(...cc).fill('#', 0, -4).join('');
+const countSheeps = arrayOfSheep => arrayOfSheep.filter(a => a).length;
