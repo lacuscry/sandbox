@@ -1,1 +1,1 @@
-const positiveSum = arr => arr.filter(a => a > 0).reduce((a, b) => a + b, 0);
+const XO = str => str.match(/[xo]/gi)?.length ? str.match(/x/gi)?.length === str.match(/o/gi)?.length : true;
