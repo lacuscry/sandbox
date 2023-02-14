@@ -1,1 +1,1 @@
-const isSquare = n => Math.sqrt(n) % 1 || n < 0 ? false : true;
+const positiveSum = arr => arr.filter(a => a > 0).reduce((a, b) => a + b, 0);
