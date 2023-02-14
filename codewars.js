@@ -1,1 +1,1 @@
-const countBits = n => n.toString(2).split('').reduce((a, b) => +a + +b, 0);
+const findOutlier = integers => integers.filter(a => a % 2).length > 1 ? +integers.filter(a => !(a % 2)) : +integers.filter(a => a % 2);
