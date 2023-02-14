@@ -1,1 +1,1 @@
-const removeChar = str => str.slice(1, str.length - 1);
+const summation = num => Array.from({length: num}, (a, b) => ++b).reduce((a, b) => a + b);
