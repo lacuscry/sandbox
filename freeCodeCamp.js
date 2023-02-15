@@ -1,21 +1,6 @@
-function orbitalPeriod(arr) {
-  const GM = 398600.4418;
-  const earthRadius = 6367.4447;
-  const a = 2 * Math.PI;
-  const newArr = [];
+const palindrome = str => str.replace(/\W|_/g,'').toLowerCase() === str.replace(/\W|_/g,'').toLowerCase().split('').reverse().join('');
 
-  function getOrbPeriod(obj) {
-    const c = Math.pow(earthRadius + obj.avgAlt, 3);
-    const b = Math.sqrt(c / GM);
-    const orbPeriod = Math.round(a * b);
-    return {name: obj.name, orbitalPeriod: orbPeriod};
-  };
-
-  for (let elem in arr) {
-    newArr.push(getOrbPeriod(arr[elem]));
-  }
-
-  return newArr;
-}
-
-orbitalPeriod([{ name: "sputnik", avgAlt: 35873.5553 }]);
+palindrome("never odd or even")
+palindrome("not a palindrome");
+palindrome("almostomla");
+palindrome("1 eye for of 1 eye.");
