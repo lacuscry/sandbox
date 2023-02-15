@@ -1,7 +1,7 @@
 body {
-    padding: 20px;
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
+    padding: 20px;
   }
   
   h1 {
@@ -32,7 +32,6 @@ body {
   hr {
     height: 2px;
     background-color: brown;
-    border-width: 2px;
     border-color: brown;
   }
   
@@ -41,6 +40,8 @@ body {
   }
   
   .item p {
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: inline-block;
   }
   
