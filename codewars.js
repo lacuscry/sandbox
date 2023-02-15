@@ -1,9 +1,1 @@
-function narcissistic(value) {
-  for (let i = 0; i < 10; i++) {
-    if (value === value.toString().split('').map(a => a ** i).reduce((a, b) => a + b)) {
-      return true;
-    }
-  }
-  
-  return false;
-}
+const validatePIN = pin => /^[0-9]{4}$|^[0-9]{6}$/g.test(pin);
