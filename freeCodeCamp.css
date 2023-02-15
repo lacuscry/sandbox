@@ -29,8 +29,9 @@ body {
   }
   
   hr {
-    height: 3px;
+    height: 2px;
     background-color: brown;
+    border-width: 2px;
     border-color: brown;
   }
   
