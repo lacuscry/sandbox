@@ -5,6 +5,6 @@ h1 {
 .marker {
   width: 200px;
   height: 25px;
-  margin: auto;
   background-color: red;
+  margin: 10px auto;
 }
