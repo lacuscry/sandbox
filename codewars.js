@@ -1,1 +1,1 @@
-const validatePIN = pin => /^[0-9]{4}$|^[0-9]{6}$/g.test(pin);
+const litres = time => Math.floor(time * 0.5);
