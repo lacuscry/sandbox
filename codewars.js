@@ -1,1 +1,1 @@
-const litres = time => Math.floor(time * 0.5);
+const inArray = (array1,array2) =>[...new Set(array2.map(a => array1.filter(b => a.includes(b))).flat().sort())];
