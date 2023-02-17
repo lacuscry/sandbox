@@ -4,8 +4,17 @@
 
 body {
   margin: 0;
-  background-color: #f5f6f7;
   font-family: sans-serif;
+  background: #f5f6f7;
+}
+
+.header {
+  padding: 32px;
+  background: #0a0a23;
+  border-bottom: 4px solid #fdb347;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .gallery img {
