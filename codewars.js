@@ -1,1 +1,1 @@
-const abbrevName = name => name.match(/^.|\s./g).join('.').replace(/ /g, '').toUpperCase();
+const binaryArrayToNumber = arr => Number.parseInt(arr.join(''), 2);
