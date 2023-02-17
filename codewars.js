@@ -1,1 +1,1 @@
-const rowSumOddNumbers = n => Math.pow(n, 3);
+const abbrevName = name => name.match(/^.|\s./g).join('.').replace(/ /g, '').toUpperCase();
