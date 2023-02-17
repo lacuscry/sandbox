@@ -1,1 +1,1 @@
-const uniqueInOrder = iterable => [...iterable].filter((a, i) => a !== iterable[i + 1]); 
+const decodeMorse = morseCode => morseCode.split(' ').map(a => MORSE_CODE[a] ? MORSE_CODE[a] : ' ').join('').trim().replace(/\s{2,}/g, ' ');
