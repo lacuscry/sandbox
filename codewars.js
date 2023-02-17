@@ -1,1 +1,13 @@
-const inArray = (array1,array2) =>[...new Set(array2.map(a => array1.filter(b => a.includes(b))).flat().sort())];
+function tribonacci(signature, n) {
+    if (n === 1) {
+      return [signature[0]];
+    } else if (!n) {
+      return [];
+    }
+  
+    while (signature.length < n) {
+      signature.push(signature.slice(-3).reduce((a, b) => a + b));
+    }
+    
+    return signature;
+  }
