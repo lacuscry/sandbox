@@ -33,6 +33,11 @@ body {
   width: 100%;
   max-width: 350px;
   height: 300px;
-  border-radius: 10px;
   object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  width: 350px;
+  content: '';
 }
