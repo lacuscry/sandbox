@@ -2,8 +2,14 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  background-color: #f5f6f7;
+  font-family: sans-serif;
+}
+
 .gallery img {
-  max-width: 350px;
   width: 100%;
+  max-width: 350px;
   height: 300px;
 }
