@@ -1,1 +1,1 @@
-const century = year => Math.ceil(year / 100);
+const rowSumOddNumbers = n => Math.pow(n, 3);
