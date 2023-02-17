@@ -3,6 +3,8 @@
   height: 600px;
   background-color: #4d0f00;
 }
+
 .frame {
   border: 50px solid black;
+  width: 500px;
 }
