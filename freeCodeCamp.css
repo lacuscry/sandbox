@@ -13,6 +13,13 @@ h1, p {
   text-align: center;
 }
 
+form {
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  margin: 0 auto;
+}
+
 label {
   display: block;
   margin: 0.5rem 0;
