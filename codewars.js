@@ -1,13 +1,1 @@
-function tribonacci(signature, n) {
-    if (n === 1) {
-      return [signature[0]];
-    } else if (!n) {
-      return [];
-    }
-  
-    while (signature.length < n) {
-      signature.push(signature.slice(-3).reduce((a, b) => a + b));
-    }
-    
-    return signature;
-  }
+const uniqueInOrder = iterable => [...iterable].filter((a, i) => a !== iterable[i + 1]); 
