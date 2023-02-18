@@ -1,9 +1,1 @@
-function moveZeros(arr) {
-    const newArr = [...arr.filter(a => a !== 0)];
-    
-    while (arr.length > newArr.length) {
-      newArr.push(0);
-    }
-    
-    return newArr;
-  }
+const pigIt = str => str.split(' ').map(a => a.match(/\w/g) ? a.padEnd(a.length + 3, a.substring(0, 1) + 'ay').replace(/\b./g, '') : a).join(' ');
