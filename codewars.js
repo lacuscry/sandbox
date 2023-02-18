@@ -1,1 +1,1 @@
-const binaryArrayToNumber = arr => Number.parseInt(arr.join(''), 2);
+const isDivisible = (n, x, y) => !(n / x % 1) && !(n / y % 1);
