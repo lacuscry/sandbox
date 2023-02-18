@@ -97,9 +97,8 @@ input {
   font-size: 16px;
 }
 
-.info input, .info label {
+.info label, .info input {
   display: inline-block;
-  text-align: right;
 }
 
 .info input {
@@ -110,6 +109,15 @@ input {
 .info label {
   width: 10%;
   min-width: 55px;
+  text-align: right;
+}
+
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
 }
 
 p::before {
