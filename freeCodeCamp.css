@@ -85,7 +85,16 @@ h2 {
 }
 
 .info {
-  padding: 15px 0 0 15px;
+  padding: 10px 0 0 5px;
+}
+
+.formrow {
+  margin: 15px 15px 0;
+  padding: 0 1px;
+}
+
+input {
+  font-size: 13px;
 }
 
 p::before {
