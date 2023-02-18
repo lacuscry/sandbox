@@ -1,1 +1,1 @@
-const pigIt = str => str.split(' ').map(a => a.match(/\w/g) ? a.padEnd(a.length + 3, a.substring(0, 1) + 'ay').replace(/\b./g, '') : a).join(' ');
+const findUniq = arr => +arr.filter(a => arr.indexOf(a) === arr.lastIndexOf(a));
