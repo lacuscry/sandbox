@@ -1,1 +1,1 @@
-const findUniq = arr => +arr.filter(a => arr.indexOf(a) === arr.lastIndexOf(a));
+const oddOrEven = array => array.reduce((a, b) => a + b, 0) % 2 ? 'odd' : 'even';
