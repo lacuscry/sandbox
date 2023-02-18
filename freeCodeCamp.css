@@ -97,6 +97,11 @@ input {
   font-size: 16px;
 }
 
+.info input, .info label {
+  display: inline-block;
+  text-align: right;
+}
+
 .info input {
   width: 50%;
   text-align: left;
@@ -106,8 +111,6 @@ input {
   width: 10%;
   min-width: 55px;
 }
-
-
 
 p::before {
   content: "Question #";
