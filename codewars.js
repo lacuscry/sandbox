@@ -1,1 +1,1 @@
-const isDivisible = (n, x, y) => !(n / x % 1) && !(n / y % 1);
+const digitize = n => `${n}`.split('').map(Number).reverse();
