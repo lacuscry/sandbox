@@ -67,6 +67,13 @@ main {
   padding-top: 50px;
 }
 
+section {
+  max-width: 600px;
+  width: 80%;
+  margin: 0 auto 10px;
+}
+
+
 h1,
 h2 {
   font-family: Verdana, Tahoma;
