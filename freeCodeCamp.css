@@ -119,5 +119,10 @@ body {
 
 .fa-music {
   display: inline-block;
-  margin: 8% 0 0 13%;
-} 
+  margin-top: 8%;
+  margin-left: 13%;
+}
+
+.blue {
+  background-color: #1E90FF;
+}
