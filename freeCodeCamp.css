@@ -69,9 +69,6 @@ section {
   padding: 0 0.75rem 1.5rem 0.75rem;
 }
 
-span {
-  font-weight: normal;
-}
 
 table {
   border-collapse: collapse;
@@ -139,8 +136,8 @@ tr.data th {
 
 tr.data th .description {
   display: block;
-  font-style: italic;
   font-weight: normal;
+  font-style: italic;
   padding: 1rem 0 0.75rem;
-  margin-right: -13.5rem 
+  margin-right: -13.5rem;
 }
