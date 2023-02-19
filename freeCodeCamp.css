@@ -3,8 +3,8 @@
   --building-color2: #66cc99;
   --building-color3: #cc6699;
   --building-color4: #538cc6;
+  --window-color1: black;
 }
-
 * {
   border: 1px solid black;
   box-sizing: border-box;
@@ -83,6 +83,7 @@ body {
   height: 60%;
   background-color: var(--building-color4);
 }
+
 .fb2 {
   width: 10%;
   height: 40%;
