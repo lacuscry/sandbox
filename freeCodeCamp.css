@@ -194,5 +194,6 @@ body {
   height: 100px;
   position: absolute;
   top: 120px;
-  left: 0;
+  left: 0px;
+  z-index: 3;
 }
