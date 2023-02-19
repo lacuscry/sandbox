@@ -91,7 +91,11 @@ table caption {
 }
 
 tbody td {
-  max-width: 4rem;
-  min-width: 4rem;
   width: 100vw;
-} 
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+tbody th {
+  width: calc(100% - 12rem);
+}
