@@ -183,7 +183,7 @@ body {
   border-style: solid;
   border-width: 42px 45px 45px 0;
   border-top-color: transparent;
-  border-right-color: Gold;
+  border-right-color: Gold; /* yellow */
   border-bottom-color: transparent;
   border-left-color: transparent;
   display: inline-block;
@@ -196,4 +196,11 @@ body {
   top: 120px;
   left: 0px;
   z-index: 3;
+}
+
+.guitar {
+  width: 150px;
+  height: 120px;
+  background-color: Goldenrod;
+  border-radius: 50%;
 }
