@@ -75,6 +75,7 @@ body {
   height: 58%;
   background-color: var(--building-color4);
 }
+
 .fb1 {
   width: 10%;
   height: 60%;
@@ -92,17 +93,20 @@ body {
   height: 35%;
   background-color: var(--building-color1);
 }
-
 .fb4 {
   width: 8%;
   height: 45%;
   background-color: var(--building-color1);
+  position: relative;
+  left: 10%;
 }
 
 .fb5 {
   width: 10%;
   height: 33%;
   background-color: var(--building-color2);
+  position: relative;
+  right: 10%;
 }
 
 .fb6 {
