@@ -116,3 +116,8 @@ body {
   left: -150px;
   z-index: 1;
 }
+
+.fa-music {
+  display: inline-block;
+  margin: 8% 0 0 13%;
+} 
