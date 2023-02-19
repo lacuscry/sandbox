@@ -1,7 +1,1 @@
-function humanReadable(s) {
-  const hours = Math.floor(s / 60 / 60);
-  const minutes = Math.floor(s / 60 - hours * 60);
-  const seconds = s - (hours * 60 * 60 + minutes * 60);
-  
-  return [hours, minutes, seconds].map(a => a > 9 ? a : `0${a}`).join(':');
-}
+const rgb = (r, g, b) => [r, g, b].map(a => a > 255 ? (255).toString(16) : a < 0 ? (0).toString(16) : a.toString(16)).map(a => a.length < 2 ? 0 + a : a).join('').toUpperCase();
