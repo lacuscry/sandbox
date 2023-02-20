@@ -49,12 +49,12 @@
   top: 50%;
 }
 .cabin:nth-of-type(2) {
-  top: 93.5%;
   right: 17%;
+  top: 93.5%;
 }
 .cabin:nth-of-type(3) {
-  top: 93.5%;
   right: 67%;
+  top: 93.5%;
 }
 .cabin:nth-of-type(4) {
   left: -8.5%;
@@ -67,4 +67,8 @@
 .cabin:nth-of-type(6) {
   right: 17%;
   top: 7%;
+}
+
+@keyframes wheel {
+  
 }
