@@ -1,1 +1,1 @@
-const check = (a, x) => a.indexOf(x) !== -1;
+const betterThanAverage = (classPoints, yourPoints) => classPoints.reduce((a, b) => a + b) / classPoints.length <= yourPoints;
