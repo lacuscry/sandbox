@@ -7,6 +7,8 @@
   width: 55vw;
   max-width: 500px;
   max-height: 500px;
+  animation-name: wheel;
+  animation-duration: 10s;
 }
 
 .line {
@@ -73,7 +75,7 @@
    0% {
      transform: rotate(0deg);
    }
-  100% {
-    transform: rotate(360deg);
-  }
+   100% {
+     transform: rotate(360deg);
+   }
 }
