@@ -249,6 +249,7 @@ body {
   background-color: var(--window-color1);
   margin: 10%;
 }
+
 .fb5 {
   width: 10%;
   height: 33%;
@@ -272,4 +273,10 @@ body {
   width: 9%;
   height: 38%;
   background-color: var(--building-color3);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--building-color3),
+    var(--building-color3) 10%,
+    transparent 10%,
+    transparent 30%);
 }
