@@ -57,6 +57,10 @@ body {
   position: absolute;
 }
 
+.penguin:active {
+  transform: scale(1.5);
+}
+
 .penguin-head {
   width: 50%;
   height: 45%;
@@ -212,7 +216,7 @@ body {
   left: 5%;
   transform-origin: top left; 
   transform: rotate(130deg) scaleX(-1);
-  animation: wave 3s linear infinite;
+  animation: 3s linear infinite wave;
 }
 
 .arm.right {
