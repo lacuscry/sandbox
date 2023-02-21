@@ -1,1 +1,1 @@
-const betterThanAverage = (classPoints, yourPoints) => classPoints.reduce((a, b) => a + b) / classPoints.length <= yourPoints;
+const simpleMultiplication = number => number % 2 ? number * 9 : number * 8;
