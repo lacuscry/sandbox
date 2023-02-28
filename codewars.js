@@ -1,1 +1,1 @@
-const cubeChecker = (volume, side) => side > 0 && volume === Math.pow(side, 3);
+const removeConsecutiveDuplicates = s => s.split(' ').filter((a, i, arr) => a !== arr[i + 1]).join(' ');
