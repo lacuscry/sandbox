@@ -1,3 +1,1 @@
-const min = list => Math.min(...list);
-
-const max = list => Math.max(...list);
+const hero = (bullets, dragons) => bullets / dragons >= 2;
