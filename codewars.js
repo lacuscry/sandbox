@@ -1,1 +1,3 @@
-const removeConsecutiveDuplicates = s => s.split(' ').filter((a, i, arr) => a !== arr[i + 1]).join(' ');
+const min = list => Math.min(...list);
+
+const max = list => Math.max(...list);
